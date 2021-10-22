@@ -27,6 +27,15 @@ Add `subresource-integrity` to the plugins section of your `.eslintrc` configura
     ]
 }
 ```
+to use the recommended configuration use:
+
+```json
+{
+    "plugins": [
+        "subresource-integrity/recommended"
+    ]
+}
+```
 
 
 Then configure the rules you want to use under the rules section.
@@ -34,11 +43,11 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "subresource-integrity/rule-name": 2
+        "subresource-integrity/missing-subresource-integrity": "error"
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+* subresource-integrity/missing-subresource-integrity: [link](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
